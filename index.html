@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Laura Soto</title>
+
+  <link rel="stylesheet" href="style2.css" />
+
+  <!-- FUENTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      Laura Soto
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </button>
+
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="propiedades.html">Propiedades</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="legal.html">Legal</a>
+      <a href="buzon.html">Atención al Cliente</a>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="tag">
+        Luxury Real Estate
+      </p>
+
+      <h1>
+        Propiedades exclusivas para quienes buscan algo extraordinario.
+      </h1>
+
+      <p class="hero-text">
+        Descubre residencias cuidadosamente seleccionadas
+        en las zonas más exclusivas de Veracruz.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="propiedades.html" class="btn-primary">
+          Explorar propiedades
+        </a>
+
+        <a href="contacto.html" class="btn-secondary">
+          Contactar asesor
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured">
+
+    <div class="section-header">
+
+      <p>
+        Colección exclusiva
+      </p>
+
+      <h2>
+        Propiedades destacadas
+      </h2>
+
+    </div>
+
+    <div class="cards">
+
+      <!-- CARD 1 -->
+      <div class="card" onclick="abrirPropiedad(
+        'Imagenes/Casa1/Img1.jpg',
+        'Imagenes/Casa1/Img2.jpg',
+        'Imagenes/Casa1/Img3.jpg',
+        'Imagenes/Casa1/Img4.jpg',
+        'Residencia de Lujo',
+        'Playas del Conchal',
+        'https://maps.google.com/?q=Playas+del+Conchal',
+        '$7,100,000 MXN',
+        '5',
+        '5.5',
+        '5',
+        '500 m²',
+        '454 m²',
+        'Bar, billar, hidroneumatico, camaras, alberca, jacuzzi, jardin, terraza y cuarto de servicio',
+        'Arquitectura moderna, acabados premium y espacios diseñados para el confort absoluto.'
+      )">
+
+        <img src="Imagenes/Casa1/Img1.jpg" alt="Casa de lujo">
+
+        <div class="card-info">
+
+          <h3>
+            Residencia de Lujo
+          </h3>
+
+          <span>
+            Playas del Conchal
+          </span>
+
+          <p>
+            Arquitectura moderna, acabados premium y espacios diseñados para el confort absoluto.
+          </p>
+
+          <strong>
+            $7,100,000 MXN
+          </strong>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card" onclick="abrirPropiedad(
+        'Imagenes/Casa2/Img1.jpg',
+        'Imagenes/Casa2/Img2.jpg',
+        'Imagenes/Casa2/Img3.jpg',
+        'Imagenes/Casa2/Img4.jpg',
+        'Villa Minimalista',
+        'Costa de Oro',
+        'https://maps.google.com/?q=Costa+de+Oro',
+        '$21,000,000 MXN',
+        '3',
+        '4',
+        '8',
+        '518.69 m²',
+        '635.24 m²',
+        'Alberca con jacuzzi, area pergolada y palapa con cocineta,sala de juegos, , jardin posterior, sala con estancia y bar a doble altura, dos recamaras con mezzanine y centro de lavado con area de tendido',
+        'Diseño elegante con iluminación natural y acabados de lujo cuidadosamente seleccionados.'
+      )">
+
+        <img src="Imagenes/Casa2/Img1.jpg" alt="Casa premium">
+
+        <div class="card-info">
+
+          <h3>
+            Villa Minimalista
+          </h3>
+
+          <span>
+            Costa de Oro
+          </span>
+
+          <p>
+            Diseño elegante con iluminación natural y acabados de lujo cuidadosamente seleccionados.
+          </p>
+
+          <strong>
+            $21,000,000 MXN
+          </strong>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card" onclick="abrirPropiedad(
+        'Imagenes/Casa3/Img1.jpg',
+        'Imagenes/Casa3/Img2.jpg',
+        'Imagenes/Casa3/Img3.jpg',
+        'Imagenes/Casa3/Img4.jpg',
+        'Casa moderna',
+        'Playas del Conchal',
+        'https://maps.google.com/?q=Playas+del+Conchal',
+        '$5,500,000 MXN',
+        '3',
+        '3',
+        '2',
+        '321.77 m²',
+        '337.15 m²',
+        'Garaje techado, recibidor de doble altura, tina de jacuzzi, jardin con alberca, area de TV, climatizada y con persianas',
+        'Una experiencia residencial premium con vistas exclusivas y diseño sofisticado.'
+      )">
+
+        <img src="Imagenes/Casa3/Img1.jpg" alt="Penthouse">
+
+        <div class="card-info">
+
+          <h3>
+            Casa moderna
+          </h3>
+
+          <span>
+            Playas del Conchal
+          </span>
+
+          <p>
+            Una experiencia residencial premium con vistas exclusivas y diseño sofisticado.
+          </p>
+
+          <strong>
+            $5,500,000 MXN
+          </strong>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card" onclick="abrirPropiedad(
+        'Imagenes/Casa4/Img1.jpg',
+        'Imagenes/Casa4/Img2.jpg',
+        'Imagenes/Casa4/Img3.jpg',
+        'Imagenes/Casa4/Img4.jpg',
+        'Casa Contemporánea',
+        'Playas del Conchal',
+        'https://maps.google.com/?q=Playas+del+Conchal',
+        '$7,100,000 MXN',
+        '3',
+        '5',
+        '2',
+        '300 m²',
+        '332 m²',
+        'Garaje para 2 autos, bodega, cuarto de servicio con baño, jardin interior, cocina integral con parrilla, campana, horno y microondas, alberca y sala de TV',
+        'Diseño contemporáneo con espacios abiertos, acabados de alta calidad y amenidades para una vida cómoda y elegante.'
+      )">
+
+        <img src="Imagenes/Casa4/Img1.jpg" alt="Casa contemporánea">
+
+        <div class="card-info">
+
+          <h3>
+            Casa Contemporánea
+          </h3>
+
+          <span>
+            Playas del Conchal
+          </span>
+
+          <p>
+            Espacios amplios, diseño moderno y acabados de lujo para una vida sofisticada.
+          </p>
+
+          <strong>
+            $7,100,000 MXN
+          </strong>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="cta-box">
+
+      <p>
+        Laura Soto
+      </p>
+
+      <h2>
+        Encuentra propiedades que reflejen tu estilo de vida.
+      </h2>
+
+      <a href="contacto.html" class="btn-primary">
+        Agendar asesoría
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- YOUTUBE -->
+
+  <section class="youtube-section">
+
+    <div class="youtube-box">
+
+      <p>
+        Contenido Exclusivo
+      </p>
+
+      <h2>
+        Descubre recorridos, consejos inmobiliarios y propiedades exclusivas en nuestro canal.
+      </h2>
+
+      <a
+        href="https://www.youtube.com/@inmobiliariaflipper"
+        target="_blank"
+        class="youtube-btn">
+
+        Ver canal de YouTube
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- MODAL PROPIEDAD -->
+
+  <div id="modalPropiedad" class="modal">
+
+    <div class="modal-content">
+
+      <span class="cerrar" onclick="cerrarPropiedad()">
+        &times;
+      </span>
+
+      <div class="galeria-principal">
+
+        <img id="modalImagenPrincipal" src="">
+
+      </div>
+
+      <div class="miniaturas">
+
+        <img id="thumb1" onclick="cambiarImagen(this.src)">
+        <img id="thumb2" onclick="cambiarImagen(this.src)">
+        <img id="thumb3" onclick="cambiarImagen(this.src)">
+        <img id="thumb4" onclick="cambiarImagen(this.src)">
+
+      </div>
+
+      <h2 id="modalTitulo"></h2>
+
+      <p id="modalUbicacion" class="ubicacion"></p>
+
+      <h3 id="modalPrecio"></h3>
+
+      <div class="property-details">
+
+        <div>
+          <strong>Recámaras</strong>
+          <p id="modalRecamaras"></p>
+        </div>
+
+        <div>
+          <strong>Baños</strong>
+          <p id="modalBanos"></p>
+        </div>
+
+        <div>
+          <strong>Estacionamientos</strong>
+          <p id="modalEstacionamientos"></p>
+        </div>
+
+        <div>
+          <strong>Terreno</strong>
+          <p id="modalTerreno"></p>
+        </div>
+
+        <div>
+          <strong>Construcción</strong>
+          <p id="modalConstruccion"></p>
+        </div>
+
+      </div>
+
+      <h3 class="modal-subtitle">
+        Amenidades
+      </h3>
+
+      <p id="modalAmenidades"></p>
+
+      <h3 class="modal-subtitle">
+        Descripción
+      </h3>  
+
+      <p id="modalDescripcion"></p>
+
+      <a
+        id="modalWhatsapp"
+        target="_blank"
+        class="modal-btn">
+
+        Solicitar información
+      </a>
+
+      <a
+        id="modalMaps"
+        target="_blank"
+        class="modal-btn">
+
+        Ver ubicación
+      </a>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    function abrirPropiedad(
+      imagen1,
+      imagen2,
+      imagen3,
+      imagen4,
+      titulo,
+      ubicacion,
+      maps,
+      precio,
+      recamaras,
+      banos,
+      estacionamientos,
+      terreno,
+      construccion,
+      amenidades,
+      descripcion
+    ){
+
+      document.getElementById("modalImagenPrincipal").src = imagen1;
+      document.getElementById("thumb1").src = imagen1;
+      document.getElementById("thumb2").src = imagen2;
+      document.getElementById("thumb3").src = imagen3;
+      document.getElementById("thumb4").src = imagen4;
+
+      document.getElementById("modalTitulo").innerText =
+      titulo;
+
+      document.getElementById("modalUbicacion").innerText =
+      "📍 " + ubicacion;
+
+      document.getElementById("modalPrecio").innerText =
+      precio;
+
+      document.getElementById("modalMaps").href =
+      maps;
+
+      document.getElementById("modalRecamaras").innerText =
+      recamaras;
+
+      document.getElementById("modalBanos").innerText =
+      banos;
+
+      document.getElementById("modalEstacionamientos").innerText =
+      estacionamientos;
+
+      document.getElementById("modalTerreno").innerText =
+      terreno;
+
+      document.getElementById("modalConstruccion").innerText =
+      construccion;
+
+      document.getElementById("modalAmenidades").innerText =
+      amenidades;
+
+      document.getElementById("modalDescripcion").innerText =
+      descripcion;
+
+      document.getElementById("modalWhatsapp").href =
+      "https://wa.me/522292949468?text=Hola,%20me%20interesa%20" +
+      encodeURIComponent(titulo);
+
+      document.getElementById("modalPropiedad").style.display =
+      "flex";
+    }
+
+    function cambiarImagen(imagen){
+
+      document.getElementById(
+        "modalImagenPrincipal"
+      ).src = imagen;
+
+    }
+
+    function cerrarPropiedad(){
+
+      document.getElementById("modalPropiedad").style.display =
+      "none";
+
+    }
+
+    window.onclick = function(event){
+
+      const modal =
+      document.getElementById("modalPropiedad");
+
+      if(event.target === modal){
+
+        modal.style.display = "none";
+
+      }
+
+    }
+
+  </script>
+
+  <script>
+    function toggleMenu(){
+      const menu =
+      document.getElementById("menu");
+
+      const boton =
+      document.querySelector(".menu-toggle");
+
+      menu.classList.toggle("active");
+
+      if(menu.classList.contains("active")){
+
+        boton.innerHTML = "✕";
+
+      }else{
+
+        boton.innerHTML = "☰";
+
+      }
+
+    }
+  </script>
+
+</body>
+</html>
